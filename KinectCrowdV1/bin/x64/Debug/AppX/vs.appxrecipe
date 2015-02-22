@@ -34,7 +34,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-02-21T23:04:20.000</Modified>
+      <Modified>2015-02-22T06:14:10.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\kinectlogo.png">
       <PackagePath>images\kinectlogo.png</PackagePath>
@@ -76,7 +76,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-22T05:38:25.134</Modified>
+      <Modified>2015-02-22T06:17:55.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\css\default.css">
       <PackagePath>css\default.css</PackagePath>

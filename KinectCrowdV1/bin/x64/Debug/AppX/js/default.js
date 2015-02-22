@@ -33,6 +33,10 @@
     // storage for depth frame data
     var depthDataArray = null;
 
+    // circle bouncing dot
+    var delta = 0; 
+    var currentDelta = 0;
+    var curRadius = 0;
 
     var context = null;
     var data = null;
@@ -67,12 +71,30 @@
                 // put imageData back onto canvas
                 depthContext.clearRect(0, 0, depthCanvas.width, depthCanvas.height);
 
-                depthContext.putImageData(depthPixels, 0, 0);
-                testing = depthContext.getImageData(50, 50, 412, 324);
+                // depthContext.putImageData(depthPixels, 0, 0);
+                // testing = depthContext.getImageData(50, 50, 412, 324);
                 
-                for (var i = 0; i < depthPixels.data[i]; i += 4) {
-
+                if ((delta % 10) === 0) {
+                    currentDelta++;
+                    var c = document.getElementById("mainCanvas");
+                    var ctx = c.getContext("2d");
+                    var circleY = 10 * (currentDelta % 2);
+                    ctx.beginPath();
+                    //ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI); 
+                    ctx.arc(256, 210, ( Belta*50 + circleY), 0, 2 * Math.PI);
+                    ctx.stroke();
                 }
+                else {
+                    var c = document.getElementById("mainCanvas");
+                    var ctx = c.getContext("2d");
+                    var circleY = 10 * (currentDelta % 2);
+                    ctx.beginPath();
+                    // ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI); 
+                    ctx.arc(256, 210, (Belta*50 + circleY), 0, 2 * Math.PI);
+                    ctx.stroke();
+                }
+                delta++; 
+
             }
            
         }
@@ -111,7 +133,7 @@
                 // get the canvas and ImageData
                 depthCanvas = document.getElementById("mainCanvas");
                 depthCanvas.width = depthFrameDescription.width;
-                depthCanvas.height = depthFrameDescription.height;
+                depthCanvas.height = depthFrameDescription.width;
                 depthContext = depthCanvas.getContext("2d");
                 depthPixels = depthContext.getImageData(0, 0, depthCanvas.width, depthCanvas.height);
 
