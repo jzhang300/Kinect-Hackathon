@@ -33,6 +33,10 @@
     // storage for depth frame data
     var depthDataArray = null;
 
+    // circle bouncing dot
+    var delta = 0;
+    var currentDelta = 0;
+
 
     var context = null;
     var data = null;
@@ -47,6 +51,8 @@
 
     var heightLevel = 0;
     var percentagePot = 0.0;
+
+    //dot bouncing
 
     // Handles the depth frame data arriving from the sensor
     function reader_DepthFrameArrived(args) {
@@ -66,14 +72,46 @@
             if (depthImageProcessor.createImagePixelDataFromArray(depthDataArray, depthPixels.data)) {
                 // put imageData back onto canvas
                 depthContext.clearRect(0, 0, depthCanvas.width, depthCanvas.height);
+                
+                /*
+                currentDelta = delta;
+                var c = document.getElementById("mainCanvas");
+                var ctx = c.getContext("2d");
+                var circleY = 10 * (currentDelta % 2);
+                ctx.beginPath();
+                ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI);
+                ctx.stroke();*/
+
+                
+                if ((delta % 10) === 0) {
+                    currentDelta ++;
+                    var c = document.getElementById("mainCanvas");
+                    var ctx = c.getContext("2d");
+                    var circleY = 10 * (currentDelta % 2);
+                    ctx.beginPath();
+                    //ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI);
+                    ctx.arc(256, 210, (50 + circleY), 0, 2 * Math.PI);
+                    ctx.stroke();
+                }
+                else {
+                    var c = document.getElementById("mainCanvas");
+                    var ctx = c.getContext("2d");
+                    var circleY = 10 * (currentDelta % 2);
+                    ctx.beginPath();
+                    // ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI);
+                    ctx.arc(256, 210, (50 + circleY), 0, 2 * Math.PI);
+                    ctx.stroke();
+                }
+
+                delta++;
                
-                depthContext.putImageData(depthPixels, 0, 0);
-                testing = depthContext.getImageData(50, 50, 412, 324);
+                //depthContext.putImageData(depthPixels, 0, 0);
+                //testing = depthContext.getImageData(50, 50, 412, 324);
 
                 for (var i = 0; i < 600; i += 50) {
                     
-                    redVal = redVal + testing.data[i];
-                    console.log(redVal);
+                    redVal = redVal + depthPixels.data[i];
+                 //   console.log(redVal);
 
 
                 }
@@ -130,9 +168,18 @@
                 // get the canvas and ImageData
                 depthCanvas = document.getElementById("mainCanvas");
                 depthCanvas.width = depthFrameDescription.width;
-                depthCanvas.height = depthFrameDescription.height;
+                depthCanvas.height = depthFrameDescription.width;
                 depthContext = depthCanvas.getContext("2d");
                 depthPixels = depthContext.getImageData(0, 0, depthCanvas.width, depthCanvas.height);
+
+                //draw circle
+                var c = document.getElementById("mainCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(256, 210, 50, 0, 2 * Math.PI);
+                ctx.stroke();
+
+
 
                 // allocate space for depth frame data
                 depthDataArray = new Uint16Array(depthFrameDescription.lengthInPixels);
@@ -147,6 +194,8 @@
             args.setPromise(WinJS.UI.processAll());
         }
     };
+
+
 
     app.oncheckpoint = function (args) {
         // TODO: This application is about to be suspended. Save any state

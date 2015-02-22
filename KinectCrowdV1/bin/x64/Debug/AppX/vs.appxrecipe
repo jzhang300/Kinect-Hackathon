@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>1738981a-9fc6-4ace-a025-263e2018c13b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\bld\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\bld\x64\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>DA8A1A46D1A68DE84008913C5ACFB1F6A20D79E483EE0CB6AAA100FE0FA01D4D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1738981a-9fc6-4ace-a025-263e2018c13b_1.0.0.0_x64__9fc6r6gc5hgxg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1738981a-9fc6-4ace-a025-263e2018c13b_9fc6r6gc5hgxg!App</RegisteredUserModeAppID>
@@ -17,74 +17,74 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\bin\x64\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-22T02:15:03.405</Modified>
+      <Modified>2015-02-22T04:58:20.705</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.winmd">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.winmd">
       <PackagePath>KinectImageProcessor.winmd</PackagePath>
-      <Modified>2015-02-22T02:15:01.152</Modified>
+      <Modified>2015-02-22T04:58:18.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.dll">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.dll">
       <PackagePath>KinectImageProcessor.dll</PackagePath>
-      <Modified>2015-02-22T02:15:01.229</Modified>
+      <Modified>2015-02-22T04:58:18.773</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\default.html">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-02-21T23:04:20.000</Modified>
+      <Modified>2015-02-22T05:11:28.340</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\kinectlogo.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\kinectlogo.png">
       <PackagePath>images\kinectlogo.png</PackagePath>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.727</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\splashscreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\splashscreen.scale-100.png">
       <PackagePath>images\splashscreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.730</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\splashscreen.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\splashscreen.scale-140.png">
       <PackagePath>images\splashscreen.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\splashscreen.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\splashscreen.scale-180.png">
       <PackagePath>images\splashscreen.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\Status.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\Status.png">
       <PackagePath>images\Status.png</PackagePath>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-19T20:43:10.000</Modified>
+      <Modified>2015-02-22T03:14:08.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-22T01:43:34.000</Modified>
+      <Modified>2015-02-22T05:19:11.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-02-21T23:04:56.000</Modified>
+      <Modified>2015-02-22T03:14:08.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-22T02:15:02.162</Modified>
+      <Modified>2015-02-22T04:58:19.722</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

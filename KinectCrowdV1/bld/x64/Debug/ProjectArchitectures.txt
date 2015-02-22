@@ -1,2 +1,2 @@
-C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\DepthBasics-HTML.jsproj;x64
-C:\Users\Demo\Documents\Kinect-Hackathon\KinectImageProcessor\KinectImageProcessor.vcxproj;x64
+C:\Users\Demo\Desktop\Kinect-Hackathon\KinectCrowdV1\DepthBasics-HTML.jsproj;x64
+C:\Users\Demo\Desktop\Kinect-Hackathon\KinectImageProcessor\KinectImageProcessor.vcxproj;x64
