@@ -66,33 +66,14 @@
             if (depthImageProcessor.createImagePixelDataFromArray(depthDataArray, depthPixels.data)) {
                 // put imageData back onto canvas
                 depthContext.clearRect(0, 0, depthCanvas.width, depthCanvas.height);
-               
+
                 depthContext.putImageData(depthPixels, 0, 0);
                 testing = depthContext.getImageData(50, 50, 412, 324);
-
-                for (var i = 0; i < 600; i += 50) {
-                    
-                    redVal = redVal + testing.data[i];
-                    console.log(redVal);
-
+                
+                for (var i = 0; i < depthPixels.data[i]; i += 4) {
 
                 }
-
-                percentagePot = redVal / ((600 / 50) * 255);
-               
-
-                if (redVal <= heightLevel) {
-                    document.getElementById("testingText").innerHTML = voteOne + " : " + redVal + " : " + percentagePot;
-
-                }
-                else {
-                    document.getElementById("testingText").innerHTML = voteTwo + " : " + redVal + " : " + percentagePot;
-                }
-                
-                
-                redVal = 0;
-              }
-                
+            }
            
         }
     }

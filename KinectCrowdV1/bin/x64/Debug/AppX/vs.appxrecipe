@@ -20,17 +20,17 @@
     <AppXManifest Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-22T02:15:03.405</Modified>
+      <Modified>2015-02-22T05:38:29.993</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.winmd">
       <PackagePath>KinectImageProcessor.winmd</PackagePath>
-      <Modified>2015-02-22T02:15:01.152</Modified>
+      <Modified>2015-02-22T05:38:28.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.dll">
       <PackagePath>KinectImageProcessor.dll</PackagePath>
-      <Modified>2015-02-22T02:15:01.229</Modified>
+      <Modified>2015-02-22T05:38:28.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\default.html">
       <PackagePath>default.html</PackagePath>
@@ -76,7 +76,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-22T01:43:34.000</Modified>
+      <Modified>2015-02-22T05:38:25.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\css\default.css">
       <PackagePath>css\default.css</PackagePath>
