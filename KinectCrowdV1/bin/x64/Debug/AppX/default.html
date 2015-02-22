@@ -11,25 +11,40 @@
 
     <!-- DepthBasics_HTML references -->
     <link href="/css/default.css" rel="stylesheet" />
-    <script src="/js/default.js"></script>
 </head>
 <body>
-    <div id="header" style="display: none;">
-        <div id="logo1"><h1>Taking Census on a Crowd</h1></div>  
-        <div id="testing"><h2 id="testingText">color</h2></div>
-    </div>
+    <audio id="firstSong" controls style="display: none">
+        <source src="InitialAudio.mp3" type="audio/mpeg">
+    </audio>
+
     <div id="number" style="display: none"><input type="number" id="myNumber" value="2000" /></div>
     <div id="voterA" style="display: none"><input type="text" id="voteOne" value="We want Obama" /></div>
     <div id="voterB" style="display: none"><input type="text" id="voteTwo" value="We want Palin" /></div>
     <div id="canvas_container">
         <canvas id="mainCanvas" width="512" height="512"></canvas>
+        <canvas id="bufferCanvas" width="512" height="512"></canvas>
     </div>
-    <div id="controls">
+    <div id="button-push">
+        <div id="hand" class="hand image-container">
+            <img src="images/assets/arm.svg" alt="Alternate Text" />
+        </div>
+        <div class="bass-button image-container">
+            <img src="images/assets/bassButton.svg" alt="Alternate Text" />
+        </div>
+        <div class="overlay"></div>
+        <div class="border-button image-container">
+            <img src="images/assets/buttonBorder.svg" alt="Alternate Text" />
+        </div>
+    </div>
+    <div id="final-destination">
+
+    </div>
+    <div id="controls" style="display: none;">
         <input type="text" name="firstname" />
     </div>
     
-    <div id="ender">
+    <div id="ender" style="display: none;">
     </div>
-
+    <script src="/js/default.js"></script>
 </body>
 </html>

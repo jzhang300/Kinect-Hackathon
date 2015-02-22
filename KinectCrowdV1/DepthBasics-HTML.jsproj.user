@@ -2,6 +2,6 @@
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\Demo\AppData\Local\Temp\DepthBasics-HTML_refcache</ReferenceCachePath>
-    <AutoRefresh>false</AutoRefresh>
+    <AutoRefresh>true</AutoRefresh>
   </PropertyGroup>
 </Project>

@@ -22,8 +22,26 @@
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\x64\Debug\KinectImageProcessor\KinectImageProcessor.dll">
       <PackagePath>KinectImageProcessor.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\Audio2withExplosion.mp3">
+      <PackagePath>Audio2withExplosion.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\InitialAudio.mp3">
+      <PackagePath>InitialAudio.mp3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\default.html">
       <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\Arm.png">
+      <PackagePath>images\assets\Arm.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\ButtonBass.png">
+      <PackagePath>images\assets\ButtonBass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\buttonBorder.png">
+      <PackagePath>images\assets\buttonBorder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\InitialButton.png">
+      <PackagePath>images\assets\InitialButton.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\kinectlogo.png">
       <PackagePath>images\kinectlogo.png</PackagePath>
@@ -54,6 +72,18 @@
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\arm.svg">
+      <PackagePath>images\assets\arm.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\bassButton.svg">
+      <PackagePath>images\assets\bassButton.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\buttonBorder.svg">
+      <PackagePath>images\assets\buttonBorder.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\images\assets\InitialButton.svg">
+      <PackagePath>images\assets\InitialButton.svg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Demo\Documents\Kinect-Hackathon\KinectCrowdV1\js\default.js">
       <PackagePath>js\default.js</PackagePath>

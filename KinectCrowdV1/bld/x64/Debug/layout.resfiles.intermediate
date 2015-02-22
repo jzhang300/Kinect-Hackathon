@@ -1,5 +1,14 @@
+Audio2withExplosion.mp3
 css\default.css
 default.html
+images\assets\Arm.png
+images\assets\arm.svg
+images\assets\bassButton.svg
+images\assets\ButtonBass.png
+images\assets\buttonBorder.png
+images\assets\buttonBorder.svg
+images\assets\InitialButton.png
+images\assets\InitialButton.svg
 images\kinectlogo.png
 images\logo.png
 images\smalllogo.png
@@ -8,4 +17,5 @@ images\splashscreen.scale-140.png
 images\splashscreen.scale-180.png
 images\Status.png
 images\storelogo.png
+InitialAudio.mp3
 js\default.js

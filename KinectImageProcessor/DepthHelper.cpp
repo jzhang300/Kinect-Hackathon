@@ -59,9 +59,9 @@ void DepthHelper::CopyDepthBytes(_In_reads_(cbSrcSize) byte* puiSource, int cbSr
 		// super close stuff is white
 		else if (depth < 500) {
 			byte intensity = static_cast<byte>(depth / MapDepthToByte2);
-			pRGBX->rgbRed = 255;
-			pRGBX->rgbGreen = 255;
-			pRGBX->rgbBlue = 255;
+			pRGBX->rgbRed = 0;
+			pRGBX->rgbGreen = 0;
+			pRGBX->rgbBlue = 0;
 			pRGBX->rgbReserved = 255;
 		}
 		//Medium stuff is red
@@ -76,9 +76,9 @@ void DepthHelper::CopyDepthBytes(_In_reads_(cbSrcSize) byte* puiSource, int cbSr
 		//All Else is white
 		else{
 			byte intensity = static_cast<byte>(depth / MapDepthToByte);
-			pRGBX->rgbRed = 255;
-			pRGBX->rgbGreen = 255;
-			pRGBX->rgbBlue = 255;
+			pRGBX->rgbRed = 0;
+			pRGBX->rgbGreen = 0;
+			pRGBX->rgbBlue = 0;
 			pRGBX->rgbReserved = 255;
 
 		}

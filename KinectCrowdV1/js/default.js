@@ -6,7 +6,8 @@
 
 (function () {
     "use strict";
-
+    //document.querySelector(".hand").style.transform = "translate(10);";
+    document.querySelector(".hand").style.cssText = "transform: translate(100px);"
     WinJS.Binding.optimizeBindingReferences = true;
 
     var app = WinJS.Application;
@@ -34,9 +35,20 @@
     var depthDataArray = null;
 
     // circle bouncing dot
-    var delta = 0; 
+    var Buffers = []; // array of canvases
+    var DrawingBuffer = 0;
+    var curContext = null;
+    var delta = 0;
+    var deltaDirection = 1;
     var currentDelta = 0;
-    var curRadius = 0;
+    var baseRadius = 30;
+    var incrementRadius = 9;
+    var curRadius = baseRadius;
+    var hands = 0;
+    var handsPerBluePixels = 1000;
+    var bluePixels = 0;
+    var bluePixelsFrameRate = 20; // getting blue pixels once every 20 frames
+    var bluePixelsFrame = 0;
 
     var context = null;
     var data = null;
@@ -69,32 +81,50 @@
             // call native WinRT component to copy 16bit depth data to canvas ImageData pixel array
             if (depthImageProcessor.createImagePixelDataFromArray(depthDataArray, depthPixels.data)) {
                 // put imageData back onto canvas
-                depthContext.clearRect(0, 0, depthCanvas.width, depthCanvas.height);
+                curContext.clearRect(0, 0, Buffers[DrawingBuffer].width, Buffers[DrawingBuffer].height);
+                curContext = Buffers[DrawingBuffer].getContext("2d");
 
-                // depthContext.putImageData(depthPixels, 0, 0);
+                Buffers[1 - DrawingBuffer].style.visibility = 'hidden';
+                Buffers[DrawingBuffer].style.visibility = 'visible';
+
+                DrawingBuffer = 1 - DrawingBuffer;
+
+                // curContext.putImageData(depthPixels, 0, 0);
                 // testing = depthContext.getImageData(50, 50, 412, 324);
                 
-                if ((delta % 10) === 0) {
-                    currentDelta++;
-                    var c = document.getElementById("mainCanvas");
-                    var ctx = c.getContext("2d");
-                    var circleY = 10 * (currentDelta % 2);
-                    ctx.beginPath();
-                    //ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI); 
-                    ctx.arc(256, 210, ( beta*50 + circleY), 0, 2 * Math.PI);
-                    ctx.stroke();
+                if (bluePixelsFrame >= bluePixelsFrameRate) {
+                    bluePixels = 0;
+                    bluePixelsFrame = 0;
+                    for (var i = 0; i < depthPixels.data.length; i += 4) {
+                        if (depthPixels.data[i + 2] > 0) {
+                            bluePixels++;
+                        }
+                    }
                 }
-                else {
-                    var c = document.getElementById("mainCanvas");
-                    var ctx = c.getContext("2d");
-                    var circleY = 10 * (currentDelta % 2);
-                    ctx.beginPath();
-                    // ctx.arc(100, (75 + circleY), 50, 0, 2 * Math.PI); 
-                    ctx.arc(256, 210, (beta*50 + circleY), 0, 2 * Math.PI);
-                    ctx.stroke();
+                if (delta >= 3 || delta <= -3) {
+                    deltaDirection *= -1;
                 }
-                delta++; 
+                delta += deltaDirection;
+                curRadius = baseRadius + incrementRadius * hands;
 
+                hands = Math.floor(bluePixels / handsPerBluePixels);
+                if (hands > 20) {
+                    hands = 20;
+                }
+                //console.log(hands);
+                curContext.beginPath();
+                curContext.arc(256, 220, (curRadius + delta), 0, 2 * Math.PI);
+                curContext.fillStyle = "#ff5050";
+                curContext.fill();
+
+                var volume = 0.2 + hands * 0.1;
+                if (volume > 1) {
+                    volume = 1;
+                }
+                document.getElementById('firstSong').volume = volume;
+
+                bluePixelsFrame++;
+                
             }
            
         }
@@ -134,11 +164,24 @@
                 depthCanvas = document.getElementById("mainCanvas");
                 depthCanvas.width = depthFrameDescription.width;
                 depthCanvas.height = depthFrameDescription.width;
-                depthContext = depthCanvas.getContext("2d");
-                depthPixels = depthContext.getImageData(0, 0, depthCanvas.width, depthCanvas.height);
 
                 // allocate space for depth frame data
                 depthDataArray = new Uint16Array(depthFrameDescription.lengthInPixels);
+
+                Buffers[0] = depthCanvas;
+                Buffers[1] = document.getElementById("bufferCanvas");
+                Buffers[1].width = depthFrameDescription.width;
+                Buffers[1].height = depthFrameDescription.width;
+
+                Buffers[1 - DrawingBuffer].style.visibility = 'hidden';
+                Buffers[DrawingBuffer].style.visibility = 'visible';
+
+                curContext = Buffers[DrawingBuffer].getContext("2d");
+                depthPixels = curContext.getImageData(0, 0, Buffers[DrawingBuffer].width, Buffers[DrawingBuffer].height);
+
+                //play the song
+                document.getElementById('firstSong').play();
+                document.getElementById('firstSong').volume = 0.2;
 
                 // open the sensor
                 sensor.open();
