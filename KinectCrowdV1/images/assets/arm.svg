@@ -599,21 +599,6 @@
 				c0,0-0.2,0-0.3,0.2c-0.2,0-0.3,0.2-0.7,0.2s-0.7-0.2-0.8-0.3c-0.2-0.2-0.3-0.2-0.3-0.3c-0.2-0.2-0.2-0.3-0.3-0.3
 				c-0.3-0.5-0.7-1.2-0.8-1.7c-0.2-0.3-0.2-0.3-0.2-0.5c0-0.2,0-0.2,0-0.2C273.4,155.4,273.4,155.4,273.4,155.3L273.4,155.3z"/>
 		</g>
-		<g>
-			<g>
-				<defs>
-					<polyline id="SVGID_1_" points="269.3,68.3 216.8,68.3 216.8,143.2 269.3,143.2 269.3,68.3 					"/>
-				</defs>
-				<clipPath id="SVGID_2_">
-					<use xlink:href="#SVGID_1_"  overflow="visible"/>
-				</clipPath>
-				<g transform="matrix(1 0 0 1 0 0)" clip-path="url(#SVGID_2_)">
-					
-						<image overflow="visible" width="860" height="1227" xlink:href="FC4E77D747C843A6.png"  transform="matrix(6.118138e-02 0 0 6.118138e-02 216.7785 68.2386)">
-					</image>
-				</g>
-			</g>
-		</g>
 	</g>
 </g>
 </svg>
